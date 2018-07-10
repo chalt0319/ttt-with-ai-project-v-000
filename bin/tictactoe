@@ -29,10 +29,6 @@ def play_game
     new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     new_game.play
     play_again?
-  elsif input == "wargames"
-    new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
-    new_game.wargames
-  end 
 end 
 
 def play_again?
