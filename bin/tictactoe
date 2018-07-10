@@ -30,7 +30,7 @@ def play_game
     new_game.play
     play_again?
   elsif input == "wargames"
-    new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+    new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new, true)
     new_game.wargames
   end 
 end 
