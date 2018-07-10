@@ -77,11 +77,11 @@ class Game
       turn 
     end 
     if won?
+      @won_games += 1
       puts "Congratulations #{winner}!"
-      @won_games += 1 
     elsif draw?
-      puts "Cat's Game!"
       @draw_games += 1 
+      puts "Cat's Game!"
     end 
   end 
   
