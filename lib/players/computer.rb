@@ -8,12 +8,6 @@ module Players
         1 
       elsif board.cells[2] != "X" && board.cells[2] != "O"
         3
-      # elsif board.cells[0] != "X" && board.cells[0] != "O" && board.cells[8] != "X" && board.cells[8] != "O"
-      #   small_array = ["1", "9"] 
-      #   small_array.sample 
-      # elsif board.cells[2] != "X" && board.cells[2] != "O" && board.cells[6] != "X" && board.cells[6] != "O"
-      #   other_array = ["3", "7"]
-      #   other_array.sample 
       elsif board.cells[0] == self.token && board.cells[2] == self.token
         2 
       else 
