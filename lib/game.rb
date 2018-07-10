@@ -73,27 +73,27 @@ class Game
   end 
   
   def play 
-    @won_games = 0 
-    @draw_games = 0
+    # @won_games = 0 
+    # @draw_games = 0
     until over?
       turn 
     end 
     if won?
-      @won_games += 1
+      # @won_games += 1
       puts "Congratulations #{winner}!"
     elsif draw?
-      @draw_games += 1 
+      # @draw_games += 1 
       puts "Cat's Game!"
     end 
   end 
   
-  def wargames
-    counter = 0 
-    until counter == 100 
-      counter += 1 
-      play 
-    end 
-    puts "The game has been won #{@won_games} times, and finished in a draw #{@draw_games} times." 
-  end 
+  # def wargames
+  #   counter = 0 
+  #   until counter == 100 
+  #     counter += 1 
+  #     play 
+  #   end 
+  #   puts "The game has been won #{@won_games} times, and finished in a draw #{@draw_games} times." 
+  # end 
 
 end 
