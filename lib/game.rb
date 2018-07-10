@@ -82,5 +82,21 @@ class Game
       puts "Cat's Game!"
     end 
   end 
+  
+  def wargames
+    counter = 0 
+    won_games = 0 
+    draw_games = 0 
+    until counter == 100 
+      counter += 1 
+      play 
+      if won?
+        won_games += 1 
+      elsif draw?
+        draw_games += 1 
+      end 
+    end 
+    puts "The game has been won #{won_games} times, and finished in a draw #{draw_games} times." 
+  end 
 
 end 
