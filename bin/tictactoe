@@ -31,7 +31,8 @@ def play_game
     play_again?
   elsif input == "wargames" 
     new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
-    2.times {new_game.play}
+    new_game.play
+    new_game.play
     puts "Bye Bye" 
   end 
 end 
