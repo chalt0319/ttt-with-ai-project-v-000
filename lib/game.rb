@@ -73,6 +73,8 @@ class Game
   end 
   
   def play 
+    @won_games = 0 
+    @draw_games = 0
     until over?
       turn 
     end 
@@ -87,8 +89,6 @@ class Game
   
   def wargames
     counter = 0 
-    @won_games = 0 
-    @draw_games = 0 
     until counter == 100 
       counter += 1 
       play 
