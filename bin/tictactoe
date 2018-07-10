@@ -29,6 +29,7 @@ def play_game
     new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     new_game.play
     play_again?
+  end 
 end 
 
 def play_again?
